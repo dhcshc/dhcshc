@@ -29,7 +29,7 @@ app.get('/price/:ticker', (req, res) => {
   getPriceByJson(ticker)
     .then(price => {
       console.log(price)
-      res.send([price])
+      res.send(`${price}`)
     })
 })
 
